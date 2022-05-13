@@ -1,0 +1,114 @@
+.resultado__Busca{
+    margin: 20px 10px 20px 10px;
+    background-color: var(--cor-vermelho-claro);
+    border: solid 2px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 50px 5px 50px 5px;
+    color: var(--cor-vermelho);
+    width: 98%;
+    display: block;
+}
+.titulo-marca{
+    background-image: url('../img/local_cafe_black_24dp.svg');
+    background-repeat: no-repeat;
+    border-bottom: 1px solid var(--cor-marrom) ;
+    font-size: 1.5rem;
+    margin: 50px 40px 0px 20px;
+    padding-left: 30px;
+    padding-bottom: 12px;
+    text-shadow:var(--cor-marrom) 0.1em 0.1em 0.2em;
+}
+
+.card{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 95%;
+}
+
+.card__box{
+    background: var(--cor-branco);
+    border-radius: 8px;
+    display: grid;
+    grid-template-areas: "card_imagem"
+                         "card_descricao"
+                         "card_valor"
+                         "card_comprar";
+    height: 460px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    width: 300px;
+}
+
+.card__imagem{
+    grid-area: card_imagem ;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px 8px 0px 0px;
+
+}
+
+.card__descricao{
+    font-size: 1.5rem;
+    font-weight: bold;
+    grid-area: card_descricao ;
+    margin: 10px;
+    text-align: center;
+}
+
+.card__valor{
+    grid-area: card_valor ;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow:var(--cor-marrom) 0.1em 0.1em 0.2em;
+
+}
+
+.card__comprar{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    grid-area: card_comprar;
+    margin-left: 55px;
+    margin-bottom: 50px;
+
+}
+
+.card__qtde{
+    border: 1px solid var(--cor-marrom);
+    background:var(--cor-branco);
+    font-size: 1.2rem;
+    float: left;
+    padding-left:40px;
+    width: 25%;
+
+    
+}
+
+.card__btn-qtde{
+    background: var(--cor-marrom);
+    border: 1px solid var(--cor-marrom);
+    color: var(--cor-branco);
+    float: left;
+    font-size: 1.2rem;
+
+}
+
+.card__btn-qtde:hover {
+    background: var(--cor-preto);
+}
+
+@media screen and (max-width: 320px) {
+    .card__box{
+        width: 269px;
+    }
+}
+

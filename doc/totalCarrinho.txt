@@ -1,0 +1,5 @@
+ <div class="cabecalho__sidenav">
+    <p class="cabecalho__sidenav-titulo">Carrinho de Compra</p>
+    <p class="cabecalho__sidenav-total"> <span style="font-weight: bold;">TOTAL: </span>R$ 939,98</p>
+
+  </div>

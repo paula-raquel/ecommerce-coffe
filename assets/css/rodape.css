@@ -1,0 +1,34 @@
+footer {
+    background: var(--cor-marrom);
+    padding: 40px 0;
+    text-align: center;
+    
+}
+
+.rodape__logotipo-textoBranco{
+    color: var(--cor-branco);
+    font-family: var(--font-logo);
+    font-size: 4rem;
+    text-shadow:var(--cor-bege) 0.1em 0.1em 0.2em;
+    text-align: center;
+}
+
+footer img{
+    align-items: center;
+    grid-area: cabecalho-login;
+    width: 80px;
+    
+}
+
+.copyright{
+    color: var(--cor-branco);
+    margin-top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .rodape__logotipo-textoBranco{
+    font-size: 2rem;
+    }
+
+}

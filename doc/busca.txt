@@ -1,0 +1,36 @@
+/** Buscador COM n palavras, porém traz duplicidade e produto sem combinação na order escrita  */
+/*
+function buscadorProduto(descricao){
+
+    const separador = ' '
+    const busca = descricao.toUpperCase().split(separador)
+    console.log(`Buscar: ${busca}`)
+
+    consultarProduto('').then(
+        data => {
+
+            limparPaginaCardProdutos()
+
+            for (let index = 0 ; index < data.length ; index++){
+                const banco = data[index].descricao.toUpperCase().split(separador)
+                console.log(`Produto Banco: ${banco}`)
+
+                for (var i = 0; i < busca.length; i++){
+                    for(var j = 0 ; j < banco.length; j++ ){
+                        console.log(`Busca do ${busca[i]} versus ${banco[j]} = ${banco[j].indexOf(busca[i])}`)
+                
+                        if(banco[j].indexOf(busca[i])>-1){
+                            console.log(`ENCONTRADO: Busca do ${busca[i]} versus ${banco[j]} = ${banco[j].indexOf(busca[i])}`)
+                            divCard.appendChild(criarCardProduto(data[index]))
+                
+                        }
+                        
+                    }
+                }
+        
+            }
+        }
+    )
+
+}
+*/

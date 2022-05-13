@@ -1,0 +1,194 @@
+
+
+.cabecalho{
+    display: grid;
+    grid-template-areas: "cabecalho-logotipo consulta-produto total-carrinho cabecalho-login";
+    grid-template-columns: 20% 50% auto auto;
+    grid-template-rows: auto auto;
+}
+
+.cabecalho__logotipo-img{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-area: cabecalho-logotipo;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+
+.cabecalho__logotipo-texto{
+    font-family: var(--font-logo);
+    font-size: 2rem;
+    text-align: center;
+    text-shadow:var(--cor-marrom) 0.1em 0.1em 0.2em;
+}
+
+.cabecalho__logotipo-img img{
+    align-items: center;
+    width: 80px;
+    
+}
+
+.cabecalho__consulta-produto{
+    grid-area: consulta-produto;
+}
+
+.form-buscar input[type=text] {
+    background:var(--cor-branco);
+    border: 1px solid var(--cor-marrom);
+    float: left;
+    margin-top: 40px;
+    padding: 12px;
+    width: 70%;
+}
+
+.form-buscar button {
+    background: var(--cor-marrom);
+    border: 1px solid var(--cor-marrom);
+    border-left: none;
+    cursor: pointer;
+    color: var(--cor-branco);
+    font-size: 17px;
+    float: left;
+    margin-top: 40px;
+    padding: 10px;
+    width: 20%;
+    border-radius: 10px;
+}
+  
+  .form-buscar button:hover {
+    opacity: 0.8;
+
+}
+
+.painel-login{
+    grid-area: cabecalho-login;
+    display: flex;
+    flex-direction: row;
+}
+
+.cabecalho__login{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.cabecalho__login:hover{
+    cursor: pointer;
+
+}
+
+.cabecalho__login img{
+    width: 50px;
+}
+
+.cabecalho__login-texto{
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow:var(--cor-marrom) 0.1em 0.1em 0.2em;
+}
+
+.cabecalho__login-btn{
+    display: none;
+    width: auto;
+}
+
+
+.cabecalho__totalCarrinho{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    grid-area: total-carrinho;
+    margin: 25px;
+    text-align: center;
+    text-shadow:var(--cor-marrom) 0.1em 0.1em 0.2em;
+}
+
+.cabecalho__totalCarrinho:hover{
+    cursor: pointer;
+
+}
+
+.cabecalho__totalCarrinho-img{
+    width: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    /*     grid-template-areas: "cabecalho-logotipo consulta-produto total-carrinho cabecalho-login"; */
+    .cabecalho{
+        grid-template-columns: 250px 1fr 1fr auto;
+        grid-template-rows: auto auto auto;
+    }
+    
+    .cabecalho__logotipo-texto{
+        font-size: 1.5rem;
+    }
+    
+    .cabecalho__logotipo-img{
+        margin: 5px;
+        padding: 5px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .cabecalho__consulta-produto{
+        margin-left: 20px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .cabecalho__login{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .painel-login{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    
+    .cabecalho__totalCarrinho{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;    
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+
+    .cabecalho{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .cabecalho__logotipo-img{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;    
+
+    }
+
+    .cabecalho__consulta-produto{
+        margin-left: 20px;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+}

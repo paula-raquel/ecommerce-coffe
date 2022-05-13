@@ -1,0 +1,109 @@
+
+.modal-titulo{
+    background-image: url('../img/local_cafe_black_24dp.svg');
+    background-repeat: no-repeat;
+    background-size: 40px;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 40px;
+    text-align: center;
+}
+
+input[type=text], input[type=password] {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 100%;
+  }
+  
+  button {
+    background-color: var(--cor-marrom);
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 14px 20px;
+    margin: 8px 0;
+    width: 100%;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .cancelbtn {
+    background-color: #f44336;
+    width: auto;
+    padding: 10px 18px;
+  }
+  
+  
+  .container {
+    border-radius: 0px 0px 10px 10px;
+    padding: 16px;
+
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  .modal {
+    background-color: rgba(0,0,0,0.4); 
+    display: none;    /* Login , mudar para none qdo finalizar os teste*/
+    height: 100%; 
+    left: 0;
+    overflow: auto; 
+    padding-top: 60px;
+    position: fixed; 
+    top: 1;
+    width: 100%; 
+    z-index: 1;
+  }
+  
+
+  .modal-content {
+    background-image: url(../img/cafe-fundo.jpg);
+    border-radius: 10px;
+    border: 1px solid #888;
+    margin: 5% auto 15% auto; 
+    width: 80%;
+  }
+    
+  .animate {
+    animation: animatezoom 0.6s;
+    -webkit-animation: animatezoom 0.6s;
+  }
+  
+  .login-error{
+    display: none;
+    color: var(--cor-vermelho);
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+
+  }
+
+
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }

@@ -1,0 +1,87 @@
+{
+  "produto":[
+		{
+			"id": 1,
+			"descricao": "Cápsulas Três Corações Vibrante",
+			"img": "1_capsula_tres_vibrante.png",
+			"fabricante": "trescoracoes",
+			"depto": "capsulas",
+			"valor": "19,89",
+			"oferta": false,
+			"valorOferta": "0,00",
+			"destaque": true
+		},
+		{
+			"id": 2,
+			"descricao": "Cápsulas Três Corações Pleno",
+			"img": "2_capsula_tres_pleno.png",
+			"fabricante": "trescoracoes",
+			"depto": "capsulas",
+			"valor": "19,89",
+			"oferta": false,
+			"valorOferta": "0,00",
+			"destaque": false
+
+		},
+		{
+			"id": 3,
+			"descricao": "Cápsulas Nescafé Dolce Gusto Chococino",
+			"img": "3_capsula_dolcegusto_chococino.jpg",
+			"fabricante": "nestle",
+			"depto": "capsulas",
+			"valor": "25,90",
+			"oferta": true,
+			"valorOferta": "22,99",
+			"destaque": true
+
+		},
+		{
+			"id": 4,
+			"descricao": "Cápsulas Nespresso Ristretto",
+			"img": "4_capsulas_nespresso_ristretto.jpg",
+			"fabricante": "nespresso",
+			"depto": "capsulas",
+			"valor": "29,99",
+			"oferta": false,
+			"valorOferta": "0,00",
+			"destaque": false
+		},
+		{
+			"id": 5,
+			"descricao": "Máquina Três Corações Passione Preta",
+			"img": "5_maquina_tre_passione_preta.png",
+			"fabricante": "trescoracoes",
+			"depto": "maquinas",
+			"valor": "599,99",
+			"oferta": false,
+			"valorOferta": "0,00",
+			"destaque": false
+
+		},
+		{
+			"id": 6,
+			"descricao": "Máquina Nespresso Inissia Preta",
+			"img": "6_maquina_nespresso_inissia.jpg",
+			"fabricante": "nespresso",
+			"depto": "maquinas",
+			"valor": "315,89",
+			"oferta": true,
+			"valorOferta": "299,99",
+			"destaque": true
+
+		}
+  ],
+  "cliente":[
+	{
+		"id": 1,
+		"nome": "paula",
+		"senha": "1234"
+	},
+	{
+		"id": 2,
+		"nome": "ana",
+		"senha": "1234"
+	}
+	]
+ 
+}

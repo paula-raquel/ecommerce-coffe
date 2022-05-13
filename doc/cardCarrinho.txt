@@ -1,0 +1,10 @@
+<div class="produto__sidenav">
+      <img class="produto__sidenav-imagem" src="../assets/img/produtos/5_maquina_tre_passione_preta.png"
+        alt="Cafeteira Tres Corações Passione Preta">
+      <div class="produto__sidenav-descricao">Cafeteira Passione Três Corações Preta</div>
+      <div class="produto__sidenav-valor">R$ 469,99</div>
+        <input class="produto__sidenav-quantidade" type="number" name="quantidade_compra"  min="1"
+          max="9999" value="1">
+          <a href="#" class="produto__sidenav-btn" >&times;</a>
+        <div class="produto__sidenav-subtotal"> <span style="font-weight: bold;">Subtotal:</span>  R$ 469,99</div>
+    </div>

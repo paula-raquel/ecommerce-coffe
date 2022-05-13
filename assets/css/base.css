@@ -1,0 +1,28 @@
+@import url(cabecalho.css);
+@import url(card.css);
+@import url(carrinho_compra.css);
+@import url(formulario_login.css);
+@import url(menus.css);
+@import url(rodape.css);
+
+:root{
+    --font-logo: 'Pacifico', cursive;
+    --cor-bege : #DEB887;
+    --cor-marrom: #8B4513;
+    --cor-branco: white;
+    --cor-preto: black;
+    --cor-verde: rgb(9, 65, 9);
+    --cor-vermelho: red;
+    --cor-vermelho-claro: rgb(250, 197, 197);
+
+
+}
+
+html{
+    background-image: url(../img/cafe-fundo.jpg);
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    /*background: var(--cor-fundo);*/
+
+}

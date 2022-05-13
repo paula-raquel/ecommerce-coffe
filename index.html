@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/reset.css">
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>E-commerce | CoffeExpress</title>
+</head>
+
+<!-- Formulario de Login -->
+<div id="form-login" class="modal" data-form=""> 
+  <form class="modal-content animate" >
+    <p class="modal-titulo">Faça o seu LOGIN</p>
+
+    <div class="container">
+      <label for="uname"><b>Nome</b></label>
+      <input type="text" placeholder="Digite o Nome" name="name" required data-nome="name">
+
+      <label for="psw"><b>Senha</b></label>
+      <input type="password" placeholder="Digite a Senha" name="psw" required data-senha="psw">
+        
+      <button type="submit">Conectar</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <span class="psw">Esqueci a <a href="#">SENHA?</a></span>
+      <button type="button" onclick="document.getElementById('form-login').style.display='none'" class="cancelbtn">Cancelar</button>
+      <span class="login-error">USUÁRIO NÃO ENCONTRADO.</span>
+    </div>
+
+  </form>
+</div>
+
+<!-- Carrinho de Compra -->
+
+<div id="mySidenav" class="sidenav">
+  
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+ 
+  <div class="cabecalho__sidenav">
+    <p class="cabecalho__sidenav-titulo">Carrinho de Compra</p>
+    <p class="cabecalho__sidenav-total"> <span style="font-weight: bold;">TOTAL: </span><span class="total">R$ 0,00</span></p>
+    <div class="cabecalho__sidenav-btn">
+      <button class="fechar-pedido">Fechar Pedido</button>
+      <div></div>
+      <button class="limpar-carrinho">Limpar Carrinho</button>  
+    </div>
+  
+  </div>
+
+<!--Produtos Carrinho de Compra-->
+  <div class="container-produtosidenav">
+  </div>
+
+</div>
+
+
+<!-- ECOMMERCE PAGINA -->
+<body>
+  <!-- Cabeçalho -->
+  <header class="cabecalho">
+    
+    <div class="cabecalho__logotipo-img" style="cursor: pointer;" onclick="document.location.reload(true)">
+      <img src="../assets/img/local_cafe_black_24dp.svg" alt="Logo E-commerce CoffeExpress" >
+      <p class="cabecalho__logotipo-texto">CoffeExpress</p>
+    </div>
+    
+    <div class="cabecalho__consulta-produto" data-formBusca="">
+      <form class="form-buscar">
+        <input type="text" placeholder="Buscar ..." name="search" data-buscar="" >
+        <button type="submit" data-btnBuscar=""><i class="fa fa-search"></i></button>
+      </form>
+    </div>
+    
+    <div class="cabecalho__totalCarrinho"  onclick="openNav()">
+      <img class="cabecalho__totalCarrinho-img" src="../assets/img/shopping_cart_black_24dp.svg" alt="Faça o login">
+      <p class="cabecalho__totalCarrinho-valor" >R$ 0,00</p>
+    </div>
+
+    <div class="painel-login">
+      <div class="cabecalho__login" onclick="document.getElementById('form-login').style.display='block'">
+        <img src="../assets/img/person_outline_black_24dp.svg" alt="Faça o login">
+        <p class="cabecalho__login-texto">Login</p>
+      </div>
+       <button class="cabecalho__login-btn">Sair</button>
+    </div>
+
+  </header>
+
+<!-- Menu de Navegação-->
+  <nav class="topnav">
+    <div class="navbar">
+      <div class="subnav">
+        <button class="subnavbtn">Cápsulas</button>
+        <div class="subnav-content">
+          <a href="#" class="menu" data-depto="capsulas" data-fabricante="todas">Todas</a>
+          <a href="#" class="menu" data-depto="capsulas" data-fabricante="trescoracoes">Três Corações</a>
+          <a href="#" class="menu" data-depto="capsulas" data-fabricante="nespresso">Nespresso</a>
+          <a href="#" class="menu" data-depto="capsulas" data-fabricante="nestle">Dolce Gusto</a>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn">Máquinas</button>
+        <div class="subnav-content">
+          <a href="#" class="menu" data-depto="maquinas" data-fabricante="todas">Todas</a>
+          <a href="#" class="menu" data-depto="maquinas" data-fabricante="trescoracoes">Três Corações</a>
+          <a href="#" class="menu" data-depto="maquinas" data-fabricante="nespresso">Nespresso</a>
+          <a href="#" class="menu" data-depto="maquinas" data-fabricante="nestle">Dolce Gusto</a>
+        </div>
+      </div>
+      <div class="subnav">
+        <button class="subnavbtn">Ofertas</button>
+        <div class="subnav-content">
+          <a href="#" class="menu" data-depto="capsulas" data-oferta="true">Cápsulas</a>
+          <a href="#" class="menu" data-depto="maquinas" data-oferta="true">Máquinas</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Card de Produtos -->
+
+  <main>
+
+
+
+  </main>
+
+  <footer>
+    <img src="../assets/img/local_cafe_white_24dp.svg">
+    <p class="rodape__logotipo-textoBranco">CoffeExpress</p>
+    <p class="copyright">&copy; Copyright Paula Raquel - 2022</p>
+  </footer>
+  
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "380px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0px";
+  }
+  </script>
+
+  <script type="module" src="js/controller/loginUsuario-controller.js"></script>
+  <script type="module" src="js/controller/produto-controller.js"></script>
+  
+</body>
+
+</html>
